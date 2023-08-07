@@ -11,14 +11,14 @@
       href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;600&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
     
     <div class="container">
 
-        <h1>Password Generator</h1>
-
+        <h1>Random Password Generator</h1>
+        <p class="text">Create Strong and Secure Password to Keep Your account Safe</p>
         <div class="display-container">
 
             <input readonly placeholder="Password" class="display" data-passwordDisplay>
@@ -35,43 +35,47 @@
 
             <!--password length section-->
             <div class="length-container">
-                <p>Password Length</p>
-                <p data-lengthNumber>0</p>
+                <p class="length">Password Length :</p>
+                <p data-lengthNumber class="length-num">0</p>
+                <div class="Decrease">-</div>
+                <input type="range" min="1" max="20" class="slider" step="1" data-lengthSlider>
+                <div class="Increase">+</div>
             </div>
             
             <!--slider-->
-            <input type="range" min="1" max="20" class="slider" step="1" data-lengthSlider>
+            
 
             <!-- checkboxes-->
             <div class="check">
-                <input type="checkbox" id="uppercase">
+                <input type="checkbox" id="uppercase" class="checkbox-larger">
                 <label for="uppercase">Includes Uppercase letters</label>
             </div>
 
             <div class="check">
-                <input type="checkbox" id="lowercase">
+                <input type="checkbox" id="lowercase" class="checkbox-larger">
                 <label for="lowercase">Includes Lowercase letters</label>
             </div>
 
             <div class="check">
-                <input type="checkbox" id="numbers">
+                <input type="checkbox" id="numbers" class="checkbox-larger">
                 <label for="numbers">Includes Numbers </label>
             </div>
 
             <div class="check">
-                <input type="checkbox" id="symbols">
+                <input type="checkbox" id="symbols" class="checkbox-larger">
                 <label for="symbols">Includes Symbols </label>
             </div>
 
             <!-- strength section-->
             <div class="strength-container">
-                <p>Strength</p>
+                <p class="strength">Strength</p>
                 <div class="indicator" data-indicator></div>
             </div>
 
             <!-- generate password-->
+            <div class="button">
             <button class="generateButton">Generate Password</button>
-
+        </div>
         </div>
 
     </div>
