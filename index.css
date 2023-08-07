@@ -1,0 +1,163 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,700;1,300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(203, 177, 212);
+    font-family: 'Comic Neue', cursive;
+}
+
+.container{
+     margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    border: 2px solid black;
+    width: 600px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 10px 2px blue;
+
+}
+
+h1{
+    color: black;
+    position: relative;
+    margin-bottom: 200px;
+    margin-top: 30px;
+    font-family: 'Comic Neue', cursive;
+    font-size: 45px;
+
+}
+
+.text{
+    margin-top: -120px;
+    font-size: 20px;
+    font-family: 'Comic Neue', cursive;
+}
+
+.display-container{
+    display: flex;
+    margin: 50px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.display{
+    height: 50px;
+    width: 350px;
+    border: 2px solid black;
+    background-color: rgb(176, 228, 228);
+    font-size: 15px;
+    padding-left: 10px;
+    font-weight: bold;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px 2px blue;
+
+}
+
+.copyBtn{
+    justify-content: center;
+    margin-top: 30px;
+    width: 100px;
+    height: 50px;
+    border-radius: 25px;
+    border: 2px solid black;
+    font-size: 20px;
+    background: transparent;
+    box-shadow: 0px 0px 10px 2px blue;
+}
+.length-container{
+    display: flex;
+    flex-direction: row;
+}
+
+.length{
+    margin-right:50px;
+    font-size: 25px;
+    
+}
+
+.length-num{
+    margin-right: 20px;
+    margin-left: -20px;
+    font-size: 25px;
+
+}
+
+.slider{
+    box-shadow: 0px 0px 10px 1px blue;
+
+    border: 2px solid black;
+    margin-left: 20px;
+}
+
+.Decrease {
+    height: 30px;
+    width: 30px;
+    border: 2px solid black;
+    font-size: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: none;    
+    margin-left: 10px;
+    cursor: pointer;
+    box-shadow: 0px 0px 10px 1px blue;
+}
+
+.Increase{
+    height: 30px;
+    width: 30px;
+    border: 2px solid black;
+    font-size: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: none;
+    margin-left: 10px;
+    cursor: pointer;
+    box-shadow: 0px 0px 10px 1px blue;
+}
+
+.check{
+    display: flex;
+    padding: 10px;
+   font-size: 20px;
+   margin-top: 10px;
+
+    
+}
+
+input.checkbox-larger{
+    height: 30px;
+    background-color: blue;
+}
+
+.strength-container{
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+
+}
+
+.button{
+   display: flex;
+   justify-content: center;
+}
+
+.generateButton{
+    height: 40px;
+    width: 200px;
+   
+    margin-top: 20px;
+    font-size: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px 2px blue;
+}
