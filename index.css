@@ -20,7 +20,7 @@
     width: 600px;
     border-radius: 20px;
     box-shadow: 2px 2px 10px 2px blue;
-
+    
 }
 
 h1{
@@ -135,10 +135,31 @@ h1{
     
 }
 
-input.checkbox-larger{
-    height: 30px;
-    background-color: blue;
+
+
+.checkbox{
+    appearance: none;
+    border: 1px solid black;
+    content: "✔";
+    height: 20px;
+    width: 20px;
+    position: relative;
+    cursor: pointer;
+    left: -15px;
+    border-radius: 2px;
 }
+
+.checkbox:checked{
+    background-color: aquamarine;
+}
+.checkbox:checked::before{
+    content: "✔";
+    top: -20%;
+    left: 20%;
+    position: absolute;
+    font-size: 20px;
+}
+
 
 .strength-container{
     display: flex;
